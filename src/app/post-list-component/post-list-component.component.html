@@ -1,3 +1,7 @@
 <div class="list-group">
-  <app-post-list-item-component *ngFor="let postItem of postsList" [post]="postItem"></app-post-list-item-component>
+  <h1>
+    Bienvenue sur mon Blog !
+  </h1>
+  <app-post-list-item-component *ngFor="let postItem of posts" [post]="postItem"></app-post-list-item-component>
+  <p *ngIf="posts.length === 0">Il n'y a aucun post pour l'instant... Créez-en un !</p>
 </div>
